@@ -1,2 +1,2 @@
 # CSS_NexterWebsite
-This Website is completely designed by wih CSS-GridSystem and SASS.
+This Website is completely designed wih CSS-GridSystem and SASS.
