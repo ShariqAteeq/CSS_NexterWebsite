@@ -37,11 +37,6 @@ body {
     color: $color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
-
-    & > * {
-        padding: 40px;
-        font-size: 3rem;
-    }
 }
 .container {
     display: grid;
