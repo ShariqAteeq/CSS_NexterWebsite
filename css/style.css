@@ -54,8 +54,70 @@ body {
   grid-column: full-start / col-end 6; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
+.home {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem; }
+  .home__pic {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 1; }
+  .home__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-self: end;
+    background-color: #101d2c;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    width: 80%;
+    justify-self: center;
+    z-index: 3;
+    transform: translateY(50%); }
+  .home__icon {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    fill: #c69963;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 2;
+    margin: 1rem;
+    justify-self: end; }
+  .home__location, .home__rooms, .home__area, .home__price {
+    display: flex;
+    align-items: center;
+    margin-left: 2.2rem; }
+    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: #c69963;
+      margin-right: 1rem; }
+    .home__location p, .home__rooms p, .home__area p, .home__price p {
+      font-size: 1.2rem; }
+  .home__btn {
+    grid-column: 1 / -1;
+    padding: 1.5rem 3rem;
+    background-color: #c69963;
+    color: #fff;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer; }
+    .home__btn:hover {
+      background-color: #B28451; }
 
 .realtors {
   background-color: #101d2c;
