@@ -128,7 +128,41 @@ body {
 
 .header {
   background-color: #54483A;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content 7rem 1fr;
+  grid-row-gap: 1.5rem;
+  justify-content: center; }
+  .header__logo {
+    height: 3rem;
+    justify-self: center; }
+  .header__btn {
+    align-self: start;
+    justify-self: start; }
+  .header__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #aaa;
+    text-transform: capitalize; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      height: 1px;
+      background-color: currentColor; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; }
+    .header__seenon-logos img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .homes {
   grid-column: center-start / center-end;
@@ -196,9 +230,28 @@ body {
     .home__btn:hover {
       background-color: #B28451; }
 
-.realtors {
+.realtor {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-row-gap: 2rem; }
+  .realtor__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 5vh;
+    align-items: center; }
+  .realtor__text {
+    text-transform: uppercase;
+    color: #6D5D4B; }
+  .realtor__img {
+    width: 100%;
+    border-radius: 50%;
+    width: 7rem;
+    display: block; }
 
 .sidebar {
   background-color: #c69963;
@@ -272,6 +325,12 @@ body {
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #f9f7f6;
+  text-transform: capitalize; }
 
 .heading-2 {
   font-size: 4rem;

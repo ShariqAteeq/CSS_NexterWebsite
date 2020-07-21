@@ -5,6 +5,10 @@
 
 .heading-1 {
     @extend %heading;
+    font-size: 4.5rem;
+    line-height: 1;
+    color: $color-grey-light-1;
+    text-transform: capitalize;
 }
 .heading-2 {
     @extend %heading;
@@ -40,6 +44,7 @@
     font-family: $font-display;
     transition: all .2s;
     font-size: 1.5rem;
+    
 
     &:hover{
         background-color: $color-primary-dark;
